@@ -11,6 +11,8 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13",
     "tslib": "^1"
   },
   "devDependencies": {
