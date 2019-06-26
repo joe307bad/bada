@@ -1,5 +1,7 @@
 import {Command, flags} from '@oclif/command'
 
+import { mount } from '../shell/shell.commands';
+
 export default class Goodbye extends Command {
   static description = 'describe the command here'
 
@@ -17,6 +19,7 @@ export default class Goodbye extends Command {
     const {args, flags} = this.parse(Goodbye)
 
     const name = flags.name || 'world'
+    mount();
     this.log(`hello ${name} from /root/cli/tmp/examples/example-multi-ts/src/commands/goodbye.ts`)
     if (args.file && flags.force) {
       this.log(`you input --force and --file: ${args.file}`)
